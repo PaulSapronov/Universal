@@ -68,8 +68,6 @@
 
 body {
   font-family: 'Mulish' , sans-serif;
-  background-color: #f5fafe;
-  color: #333333;
 }
 
 .container {
@@ -106,8 +104,6 @@ img {
   font-weight: bold;
   font-size: 12px;
   line-height: 15px;
-  color: #ffffff;
-  background-color: #ec1f46;
   border: none;
   border-radius: 4px;
   cursor: pointer;
@@ -454,5 +450,13 @@ template {
  */
 [hidden] {
   display: none;
+}
+
+.hero {
+  margin: auto;
+  width: 100%;
+  height: 500px;
+  background: -webkit-gradient(linear, left bottom, left top, color-stop(20%, blue), color-stop(20%, green));
+  background: linear-gradient(0deg, blue 20%, green 20%);
 }
 /*# sourceMappingURL=style.css.map */

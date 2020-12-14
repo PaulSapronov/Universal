@@ -11,35 +11,143 @@
 <body>
 	<header class="header">
 		<div class="container">
-			<a href="" class="header__logo">
-				<img class="logo" src="" alt="logo" />
-			</a>
-			<nav class="navbar">
-				<ul class="navbar__list">
-					<li class="navbar__item"></li>
-					<li class="navbar__item"></li>
-					<li class="navbar__item"></li>
-					<li class="navbar__item"></li>
-					<li class="navbar__item"></li>
-					<li class="navbar__item"></li>
-					<li class="navbar__item"></li>
-				</ul>
-			</nav>
-			<!-- /.navbar -->
-			<form class="header__form" action="#">
-				<input type="search" class="header__input">
-				<button class="header__button">
-					<img src="" alt="Icon: search">
-				</button>
-			</form>
+			<div class="header-wrapper">
+				<a href="index.html" class="header__logo">
+					<img class="logo" src="img/logo/logo.svg" alt="logo" />
+				</a>
+				<nav class="navbar">
+					<ul class="navbar__list">
+						<li class="navbar__item"><a href="#" class="navbar__link">Статьи</a></li>
+						<li class="navbar__item"><a href="#" class="navbar__link">Новости</a></li>
+						<li class="navbar__item"><a href="#" class="navbar__link">Курсы</a></li>
+						<li class="navbar__item"><a href="#" class="navbar__link">HTML</a></li>
+						<li class="navbar__item"><a href="#" class="navbar__link">CSS</a></li>
+						<li class="navbar__item"><a href="#" class="navbar__link">JavaScript</a></li>
+						<li class="navbar__item"><a href="#" class="navbar__link">Web Design</a></li>
+					</ul>
+				</nav>
+				<!-- /.navbar -->
+				<form class="form header__form header__search-form" action="#">
+					<input class="input header__input" type="search" placeholder="Поиск">
+					<button class="button header__button header__input-button">
+						<img src="img/svg/icon/search.svg" alt="Icon: search">
+					</button>
+				</form>
+			</div>
 		</div>
 		<!-- /.container -->
 	</header>
 	<!-- /.header -->
+
 	<main class="main">
-		<div class="hero">
-		</div>
+		<section class="hero">
+			<div class="container">
+				<div class="hero-wrapper">
+					<div class="hero__content">
+
+						<div class="user">
+							<img class="user__avatar" src="img/user/user-avatar-1.png" alt="">
+							<div class="user__info">
+								<span class="user__name">Давид Гуров</span>
+								<span class="user__work">Разработчик</span>
+							</div>
+						</div>
+					</div>
+
+					<div class="hero__tabs-wrapper">
+						<div class="hero__tabs-title">Рекомендуем</div>
+						<div class="hero__tab">
+							<h3 class="tab-title">css</h3>
+							<p class="tab-text">Как использовать CSS float после того, как вышел Flexbox</p>
+						</div>
+						<div class="hero__tab">
+							<h3 class="tab-title">javascript</h3>
+							<p class="tab-text">На каком стандарте писать скрипты, если я фрилансер</p>
+						</div>
+						<div class="hero__tab">
+							<h3 class="tab-title">html</h3>
+							<p class="tab-text">Правильно вставляем картинку на сайт для Retina дисплея</p>
+						</div>
+						<div class="hero__tab">
+							<h3 class="tab-title">Web design</h3>
+							<p class="tab-text">ТОП-10 плагинов для Figma</p>
+						</div>
+						<div class="hero__tab">
+							<h3 class="tab-title">css</h3>
+							<p class="tab-text">Возможности CSS Grid Layout , которые уже можно применять</p>
+						</div>
+					</div>
+					<!-- /.hero__tabs-wrapper -->
+				</div>
+			</div>
+			<!-- /.container -->
+		</section>
 		<!-- /.hero -->
+		<section class="articles">
+			<div class="container">
+				<div class="articles__top">
+					<a href="#" class="articles__top-link">
+						<span class="articles__top-text">25 способов настроить слайде</span>
+						<img class="articles__top-image" src="img/articles-top/article-1.png" alt="25 способов настроить слайдер">
+					</a>
+					<a href="#" class="articles__top-link">
+						<span class="articles__top-text">Главные фишки фрилансера</span>
+						<img class="articles__top-image" src="img/articles-top/article-2.png" alt="Главные фишки фрилансера">
+					</a>
+					<a href="#" class="articles__top-link">
+						<span class="articles__top-text">Техника управления временем “Помодоро”</span>
+						<img class="articles__top-image" src="img/articles-top/article-3.png" alt="“Помодоро”">
+					</a>
+					<a href="#" class="articles__top-link">
+						<span class="articles__top-text">Что нужно знать о Git и GitHub </span>
+						<img class="articles__top-image" src="img/articles-top/article-4.png" alt="Что нужно знать о Git и GitHub ">
+					</a>
+				</div>
+				<div class="articles__bottom">
+
+					<a href="#" class="articles__bottom-link articles__bottom-link--main">
+						<span class="link-title">Вам предложили работу мечты, но вы не можете... </span>
+					</a>
+					<a href="#" class="articles__bottom-link articles__bottom-link--popular">
+						<span class="link-title">Web design</span>
+					</a>
+					<a href="#" class="articles__bottom-link articles__bottom-link--check">
+						<span class="link-title">Чек-лист сдачи верстки вашему заказчику</span>
+					</a>
+					<a href="#" class="articles__bottom-link articles__bottom-link--tool">
+						<span class="link-title">20+ инструментов для js-разработчика</span>
+					</a>
+					<a href="#" class="articles__bottom-link articles__bottom-link--ref">
+						<span class="link-title">Удачные референсы</span>
+					</a>
+					<a href="#" class="articles__bottom-link articles__bottom-link--customer">
+						<span class="link-title">Заказчики — мудаки?</span>
+					</a>
+					<a href="#" class="articles__bottom-link articles__bottom-link--tegs">
+						<span class="link-title">теги</span>
+					</a>
+					<a href="#" class="articles__bottom-link articles__bottom-link--stress">
+						<span class="link-title">Работа без стресса — это...</span>
+					</a>
+					<a href="#" class="articles__bottom-link articles__bottom-link--free">
+						<span class="link-title">Бесплатные методы...</span>
+					</a>
+					<a href="#" class="articles__bottom-link articles__bottom-link--social">
+						<span class="link-title">Наши соцсети</span>
+					</a>
+
+				</div>
+			</div>
+			<!-- /.container -->
+		</section>
+		<!-- /.articles -->
+		<section class="preview">
+			<h2 class="preview__title">Расследование недели: сколько зарабатывает веб разработчик в Москве</h2>
+			<button class="button preview__button">
+				<span class="button__text"></span>
+				<img src="" alt="" class="button__image">
+			</button>
+		</section>
 	</main>
 	<!-- /.main -->
 	<footer class="footer"></footer>

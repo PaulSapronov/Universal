@@ -2,10 +2,18 @@
 	padding: 15px 0 30px
 	&__top
 		display: flex
-		margin-bottom: 15px
-		padding: 30px 25px 35px
+		justify-content: space-between
+		padding: 25px 25px 30px
+		margin-bottom: 30px
 		background: #30363d
 		border-radius: 10px
+		&-title
+			max-width: 155px
+			margin: 0 17px 0 0
+			font-style: normal
+			font-weight: 900
+			font-size: 14px
+			line-height: 20px
 		&-image
 			width: 65px
 			height: 65px
@@ -13,26 +21,249 @@
 		&-link
 			display: flex
 			align-items: center
+			max-width: 234px
 			text-decoration: none
 			color: $light
+		&-splitter
+			width: 1px
+			height: 75px
+			background: $medium-dark
 	&__bottom
 		display: grid
 		grid-template-rows: repeat(4, 1fr)
 		grid-template-columns: repeat(4, 1fr)
 		grid-gap: 30px
-		&-link
-			&--main
-				grid-column: 1 / 3
-				grid-row: 1 / 3
-			&--popular
-				grid-row: 1 / 3
-			&--check
-			&--tool
-				grid-row: 1 / 3
-			&--ref
-			&--customer
-			&--tegs
-				grid-row: 2 / 4
-			&--stress
-			&--free
-			&--social
+		&-card
+			display: flex
+			text-decoration: none
+			flex-direction: column
+			background-color: $light
+			border-radius: 10px
+			overflow: hidden
+
+.card
+	&-topic
+		font-family: 'Lato', sans-serif
+		font-style: normal
+		font-weight: 900
+		font-size: 12px
+		line-height: 15px
+		text-transform: uppercase
+	&-title
+		margin: 0
+		font-family: 'Roboto Slab', serif
+		font-style: normal
+		font-weight: bold
+		font-size: 16px
+		line-height: 25px
+		color: $tertiary
+	&-text
+		margin: 0
+		color: $medium-dark
+		font-family: 'Lato', sans-serif
+		font-style: normal
+		font-weight: normal
+		font-size: 14px
+		line-height: 20px
+		text-decoration: none
+
+.user
+	&-name
+		font-style: normal
+		font-weight: normal
+		font-size: 14px
+		line-height: 20px
+.like
+	width: 15px
+	height: 15px
+	color: #ffffff
+.comment
+	width: 15px
+	height: 15px
+	&-item
+		font-style: normal
+		font-weight: normal
+		font-size: 12px
+		line-height: 15px
+		color: $light
+.major
+	position: relative
+	grid-column: 1 / 3
+	grid-row: 1 / 3
+	justify-content: space-between
+	background: $light url(../img/articles-bottom/article-5.png) no-repeat right top 15px
+	padding: 35px 30px 13px 35px
+	&-content
+		max-width: 237px
+	&-topic
+		display: block
+		margin-bottom: 20px
+		color: #6e99ae
+	&-title
+		margin-bottom: 25px
+		font-weight: bold
+		font-size: 25px
+		line-height: 30px
+	&-splitter
+		position: absolute
+		left: 0
+		bottom: 55px
+		width: 100%
+		height: 1px
+		background: #d9dadb
+	&-comment
+		display: flex
+		align-items: center
+	&__user
+		&-avatar
+			width: 30px
+			height: 30px
+			margin-right: 10px
+		&-name
+			margin-right: 5px
+			font-weight: 900
+			color: $tertiary
+		&-text
+			margin-right: 15px
+	&__comment
+		&-icon
+			margin-right: 5px
+		&-number
+			color: $comment-text-color
+.popular
+	grid-row: 1 / 3
+	padding: 19px 25px 25px 25px
+	background: linear-gradient(0deg, rgba(64, 48, 61, 0.35), rgba(64, 48, 61, 0.35)), url(../img/articles-bottom/article-6.jpg) no-repeat center
+	background-size: cover
+	&-label
+		max-width: 92px
+		margin-bottom: 116px
+		padding: 5px 12px
+		font-size: 12px
+		line-height: 15px
+		color: $light
+		background-color: #3DC47E
+		border-radius: 3px
+	&-topic
+		margin-top: 0
+		margin-bottom: 23px
+		color: #e7d9ff
+	&-title
+		margin-bottom: 27px
+		letter-spacing: 0.5px
+		text-transform: uppercase
+		color: $light
+	&-comment
+		display: flex
+	&__user
+		&-avatar
+			width: 45px
+			height: 45px
+			margin-right: 10px
+		&-name
+			color: $light
+			opacity: 0.85
+			margin-top: 3px
+		&-action
+			display: flex
+			align-items: center
+			margin-top: 2px
+		&-info
+			display: flex
+			flex-direction: column
+		&-date
+			color: $light
+			opacity: 0.4
+			margin-right: 7px
+	&__comment
+		&-icon, &-like, &-number
+			color: $light
+			opacity: 0.4
+			margin-right: 6px
+	&__like
+		&-number
+			color: $light
+			opacity: 0.4
+
+.checklist
+	position: relative
+	justify-content: space-between
+	align-items: center
+	padding: 25px 25px 13px 25px
+	background-color: #3bbdc4
+	&-image
+		position: absolute
+		top: 25px
+		right: 25px
+
+	&-title
+		margin-bottom: 10px
+		color: $light
+	&-text
+		color: #C1F4F5
+	&-desc
+		color: $light
+	&-splitter
+		position: absolute
+		bottom: 45px
+		width: 100%
+		height: 1px
+		background: #96E2E3
+	&-button
+		display: flex
+		flex-direction: row
+		align-items: center
+	&-arrow
+		margin-right: 11px
+
+.tools
+	grid-row: 3 / 5
+	&-image
+		height: 275px
+		object-fit: cover
+	&-title
+		padding: 15px 19px 15px 25px
+		max-width: 213px
+.description
+	justify-content: space-between
+	padding: 25px 25px 30px
+	&-title
+		margin-bottom: 5px
+	&-date
+		color: $comment-text-color
+
+.tags
+	grid-row: 2 / 4
+	&-title
+		padding: 20px 25px 20px
+		font-style: normal
+		font-weight: 900
+		font-size: 14px
+		line-height: 20px
+		text-transform: uppercase
+		color: $tertiary
+		border-bottom: 1px solid #d9dadb
+	&-box
+		display: flex
+		flex-wrap: wrap
+		padding: 24px 25px 15px
+	&-item
+		margin-right: 8px
+		margin-bottom: 13px
+		padding: 5px 15px
+		font-weight: 900
+		color: $tertiary
+		border: 1px solid #d9dadb
+		border-radius: 5px
+.social
+	display: flex
+	align-items: center
+	justify-content: space-between
+	padding: 30px 25px 35px
+	&-title
+		font-size: 20px
+		line-height: 25px
+	&-box
+		display: flex
+		justify-content: space-around
+		width: 100%

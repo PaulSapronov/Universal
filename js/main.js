@@ -18,6 +18,12 @@ $(document).ready(function () {
 			el: '.swiper-pagination',
 			clickable: true,
 		},
+
+		autoplay: {
+			delay: 3000,
+			disableOnInteraction: false,
+		},
+
 		keyboard: true,
 	});
 

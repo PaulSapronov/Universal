@@ -1,40 +1,117 @@
 .footer
 	padding: 60px 0 55px
+	background: $light
 	&__wrapper
-		display: grid
-		grid-template-rows: repeat(4, 1fr)
-		grid-template-columns: repeat(6, 1fr)
-.footer
+		display: flex
+		flex-direction: column
 	&__newsletter
 		grid-column: 1 / 7
+		display: flex
+		flex-direction: column
+		align-items: center
 		&-title
+			margin-top: 0
+			margin-bottom: 25px
+			font-family: Roboto Slab
+			font-style: normal
+			font-weight: bold
+			font-size: 40px
+			line-height: 50px
+			text-align: center
+			color: $tertiary
 		&-form
-	&-input
-
-	&-button
-
+			display: flex
+			align-items: center
+			margin-bottom: 70px
+		&-input
+			height: 40px
+			width: 313px
+			margin-right: 5px
+			padding: 0 15px
+			font-style: normal
+			font-weight: normal
+			font-size: 14px
+			line-height: 20px
+			color: $comment-text-color
+			border: 1px solid #d9dadb
+			border-radius: 5px
+		&-button
+			border: none
+			padding: 10px 25px
 	&__info
-		// grid-row: 2
-		grid-column: 1 / 7
-	&__news
-
-	&__title
-
-	&__link
-
-	&__articles
-
-	&__videos
-
-	&__courses
-
-	&__information
-
-	&__categiories
-
+		display: grid
+		grid-template-columns: 1fr 1fr 1fr 1fr 1fr 165px
+		min-height: 305px
+		border-bottom: 1px solid #d9dadb
+		&-item
+			display: flex
+			flex-direction: column
+			&--news
+				border-top: 5px solid #ff4f52
+			&--articles
+				border-top: 5px solid #ac8ee3
+			&--videos
+				border-top: 5px solid #4592ff
+			&--courses
+				border-top: 5px solid #ffa34d
+			&--information
+				border-top: 5px solid #3dc47e
+			&--categiories
+				border-top: 5px solid rgb(110, 153, 174)
+		&-title
+			margin-top: 30px
+			margin-bottom: 25px
+			font-style: normal
+			font-weight: 900
+			font-size: 14px
+			line-height: 20px
+			color: $tertiary
+		&-link
+			margin-bottom: 15px
+			font-style: normal
+			font-weight: normal
+			font-size: 14px
+			line-height: 20px
+			text-decoration: none
+			color: $medium-dark
 	&__contacts
-		// grid-row: 3
-		grid-column: 1 / 7
+		display: flex
+		align-items: center
+		justify-content: space-between
+		min-height: 112px
+		margin-bottom: 40px
+		border-bottom: 1px solid #d9dadb
+		&-about
+			display: flex
+			align-items: center
+		&-link
+			margin-right: 30px
+			font-style: normal
+			font-weight: 900
+			font-size: 14px
+			line-height: 20px
+			letter-spacing: 0.5px
+			text-transform: uppercase
+			text-decoration: none
+			color: $tertiary
+		&-social
+			display: flex
+	&__social
+		&-link
+			margin-left: 15px
+	&__logo
+		margin-right: 30px
 	&__copyright
-		// grid-row: 4
-		grid-column: 1 / 7
+		display: flex
+		justify-content: space-between
+		align-items: center
+		font-style: normal
+		font-weight: normal
+		font-size: 14px
+		line-height: 20px
+		color: $comment-text-color
+		&-all
+			max-width: 750px
+			margin: 0
+		&-tag
+			margin-top: -18px

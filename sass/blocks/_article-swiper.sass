@@ -26,6 +26,10 @@
 			font-weight: normal
 			font-size: 18px
 			line-height: 30px
+			&--mb0
+				margin-bottom: 60px
+			&--mb80
+				margin-bottom: 80px
 			&-box
 				max-width: 622px
 		&__title
@@ -37,11 +41,10 @@
 			font-size: 25px
 			line-height: 30px
 			color: $tertiary
-
 		&__user
 			position: absolute
-			top: 560px
-			right: 211px
+			top: -162px
+			right: 0
 			display: flex
 			flex-direction: column
 			align-items: center
@@ -95,3 +98,64 @@
 				padding: 15px 0
 				text-align: center
 				border-top: 1px solid #d9dadb
+		&__slider
+			&-image
+				object-fit: cover
+			&-block
+				display: flex
+				align-items: center
+				justify-content: space-between
+				margin-bottom: 45px
+				border: 1px solid	#d9dadb
+				border-top: none
+				border-radius: 0 0 10px 10px
+			&-text
+				padding: 0 35px
+				font-style: normal
+				font-weight: normal
+				font-size: 14px
+				line-height: 20px
+				color: $medium-dark
+			&-user
+				display: flex
+				align-items: center
+				justify-content: flex-start
+				width: 262px
+				padding: 12px 0 13px 30px
+				border-left: 1px solid #d9dadb
+			&-avatar
+				border-radius: 50%
+				margin-right: 10px
+			&-info
+				display: flex
+				flex-direction: column
+			&-name
+				font-style: normal
+				font-weight: normal
+				font-size: 14px
+				line-height: 20px
+				color: $medium-dark
+			&-work
+				font-style: normal
+				font-weight: normal
+				font-size: 12px
+				line-height: 15px
+				color: $comment-text-color
+		&__quote
+			position: relative
+			margin-bottom: 45px
+			font-family: Roboto Slab
+			font-style: normal
+			font-weight: bold
+			font-size: 25px
+			line-height: 30px
+			color: $tertiary
+			&-image
+				position: absolute
+				z-index: -1
+				top: -20px
+				left: -20px
+		&__swiper
+			&-container
+				height: 555px
+				border-radius: 10px 10px 0 0

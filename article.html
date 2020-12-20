@@ -48,8 +48,8 @@
 	<main class="main">
 
 		<section class="article-hero">
-			<img src="img/svg/icon/bookmark-big.svg" alt="bookmark" class="article-hero__bookmark">
 			<div class="article-hero__container container-content">
+				<img src="img/svg/icon/bookmark-big.svg" alt="bookmark" class="article-hero__bookmark">
 
 				<div class="article-hero__menu">
 					<div class="article-hero__topic">Новости</div>
@@ -80,8 +80,8 @@
 					<img class="article-hero__comment-icon comment" src="img/svg/icon/comment.svg" alt="Icon: comment">
 					<span class="article-hero__number-comment comment-item">19</span>
 				</div>
-
 			</div>
+
 			<!-- /.container -->
 		</section>
 		<!-- /.hero -->
@@ -139,12 +139,8 @@
 			<!-- /.content-container -->
 
 			<div class="container">
-				<!-- Slider main container -->
-				<!-- 	<div class="article-swiper__box"> -->
 				<div class="swiper-container article-swiper__swiper-container">
-					<!-- Additional required wrapper -->
 					<div class="swiper-wrapper">
-						<!-- Slides -->
 						<div class="swiper-slide">
 							<img src="img/article-swiper/article-slide-1.png" alt="slide" class="article-swiper__slider-image">
 						</div>
@@ -154,10 +150,15 @@
 						<div class="swiper-slide">
 							<img src="img/article-swiper/article-slide-1.png" alt="slide" class="article-swiper__slider-image">
 						</div>
+
 					</div>
 					<!-- If we need navigation buttons -->
-					<div class="swiper-button-prev"></div>
-					<div class="swiper-button-next"></div>
+					<div class="article-swiper__button-prev">
+						<img src="img/svg/button/slider-prev.svg" alt="" class="article-swiper__button-arrow">
+					</div>
+					<div class="article-swiper__button-next">
+						<img src="img/svg/button/slider-next.svg" alt="" class="article-swiper__button-arrow">
+					</div>
 				</div>
 
 				<div class="article-swiper__slider-block">
@@ -177,6 +178,21 @@
 			<!-- /.container -->
 
 			<div class="container container-content">
+				<div class="article-swiper__sidebar">
+					<h3 class="article-swiper__sidebar-title">Материал по теме</h3>
+					<img src="img/article-swiper-sidebar.png" alt="image" class="article-swiper__sidebar-image">
+					<p class="article-swiper__sidebar-subtitle">20+ инструментов для js-разработчика</p>
+					<p class="article-swiper__sidebar-text">Узнайте, какими инструментами вы еще не пользовались, а могли бы.
+						Эти инструменты помогут вам
+						ускорить свою работу или повысить ее качество. Все инструменты собраны в виде...
+					</p>
+					<div class="article-swiper__sidebar-action">
+						<img src="img/svg/icon/eye.svg" alt="watch" class="article-swiper__sidebar-watch">
+						<span class="article-swiper__sidebar-num">1,623</span>
+						<img src="img/svg/icon/comment.svg" alt="comment" class="article-swiper__sidebar-comment">
+						<span class="article-swiper__sidebar-num">102</span>
+					</div>
+				</div>
 				<div class="article-swiper__text-box">
 					<p class="article-swiper__text">
 						Идейные соображения высшего порядка, а также рамки и место обучения кадров играет важную роль в формировании

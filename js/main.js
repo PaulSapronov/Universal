@@ -10,7 +10,7 @@ $(document).ready(function () {
 		$(this).addClass('tabs__item--active');
 	});
 
-	var mySwiper = new Swiper('.swiper-container', {
+	var mySwiper = new Swiper('.gallery__swiper-container', {
 		loop: true,
 
 		// If we need pagination
@@ -25,6 +25,17 @@ $(document).ready(function () {
 		},
 
 		keyboard: true,
+	});
+
+	var articleSwiper = new Swiper('.article-swiper__swiper-container', {
+		loop: true,
+		keyboard: true,
+
+		navigation: {
+			nextEl: '.article-swiper__button-next',
+			prevEl: '.article-swiper__button-prev',
+		},
+
 	});
 
 	var menuButton = $('.menu-button');

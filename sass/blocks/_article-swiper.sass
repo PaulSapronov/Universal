@@ -1,6 +1,7 @@
 .article
 	&-swiper
 		padding: 62px 0 60px
+		background: $light
 		&__lead
 			font-style: normal
 			font-weight: normal
@@ -32,6 +33,7 @@
 				margin-bottom: 80px
 			&-box
 				max-width: 622px
+				position: relative
 		&__title
 			margin-top: 0
 			margin-bottom: 30px
@@ -159,3 +161,71 @@
 			&-container
 				height: 555px
 				border-radius: 10px 10px 0 0
+		&__button
+			&-arrow
+				position: relative
+				width: 60px
+				height: 60px
+				z-index: 100
+				cursor: pointer
+			&-prev
+				position: absolute
+				top: 44.5%
+				left: 35px
+			&-next
+				position: absolute
+				top: 44.5%
+				right: 35px
+		&__sidebar
+			position: absolute
+			top: 133px
+			right: 0
+			display: flex
+			flex-direction: column
+			width: 263px
+			&-title
+				margin-top: 0
+				font-family: Roboto Slab
+				font-style: normal
+				font-weight: bold
+				font-size: 20px
+				line-height: 25px
+				color: $tertiary
+			&-image
+				width: 263px
+				height: 180px
+				margin-bottom: 15px
+				border-radius: 10px
+			&-subtitle
+				max-width: 185px
+				margin-top: 0
+				margin-bottom: 6px
+				font-family: Roboto Slab
+				font-style: normal
+				font-weight: bold
+				font-size: 16px
+				line-height: 25px
+				color: $tertiary
+			&-text
+				margin-top: 0
+				margin-bottom: 19px
+				font-style: normal
+				font-weight: normal
+				font-size: 14px
+				line-height: 20px
+				color: $medium-dark
+			&-action
+				display: flex
+			&-watch
+				width: 15px
+				height: 10px
+				margin-right: 5px
+			&-comment
+				margin-right: 6px
+			&-num
+				margin-right: 10px
+				font-style: normal
+				font-weight: normal
+				font-size: 12px
+				line-height: 15px
+				color: $comment-text-color

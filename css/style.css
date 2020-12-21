@@ -2411,6 +2411,7 @@ img {
   font-weight: bold;
   font-size: 16px;
   line-height: 25px;
+  text-decoration: none;
   color: #262d33;
 }
 
@@ -2447,5 +2448,103 @@ img {
   font-size: 12px;
   line-height: 15px;
   color: #939699;
+}
+
+.article-swiper__tags-splitter {
+  width: 653px;
+  height: 1px;
+  background: #d9dadb;
+}
+
+.article-swiper__tags-wrapper {
+  padding: 13px 0 55px;
+}
+
+.article-swiper__tags-link {
+  display: inline-block;
+  padding: 5px 15px;
+  margin-right: 3px;
+  font-style: normal;
+  font-weight: 900;
+  font-size: 14px;
+  line-height: 20px;
+  text-decoration: none;
+  border: 1px solid #d9dadb;
+  border-radius: 5px;
+  color: #262d33;
+}
+
+.article-swiper__repost {
+  padding: 32px 0 40px;
+}
+
+.article-swiper__repost-title {
+  margin-top: 0;
+  font-family: Roboto Slab;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 25px;
+  line-height: 30px;
+  color: #262d33;
+}
+
+.article-swiper__repost-buttons {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+
+.article-swiper__repost-button {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 40px;
+  padding: 10px 21px;
+  margin-right: 14px;
+  font-style: normal;
+  font-weight: 900;
+  font-size: 14px;
+  line-height: 20px;
+  text-decoration: none;
+  color: #ffffff;
+  background: #4592ff;
+  border-radius: 20px;
+}
+
+.article-swiper__repost-image {
+  margin-right: 10px;
+  width: 18px;
+  height: 18px;
+}
+
+.article-swiper__repost-num {
+  margin-left: 8px;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 20px;
+}
+
+.article-swiper__repost-num--like {
+  color: #ffc4c9;
+}
+
+.article-swiper__repost-num--face {
+  color: #bbc6ff;
+}
+
+.article-swiper__repost-num--twitt {
+  color: #c5e4fc;
 }
 /*# sourceMappingURL=style.css.map */

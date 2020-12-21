@@ -1,0 +1,192 @@
+.article
+	&-reviews
+		padding: 90px 0 30px
+		background: $light
+		&__wrapper
+			max-width: 750px
+		&__title
+			margin-top: 0
+			margin-bottom: 0
+			margin-right: 10px
+			font-family: Roboto Slab
+			font-style: normal
+			font-weight: bold
+			font-size: 40px
+			line-height: 50px
+			color: $tertiary
+			&-comments
+				display: flex
+				align-items: center
+			&-box
+				display: flex
+				align-items: center
+				justify-content: space-between
+				margin-bottom: 29px
+				color: $comment-text-color
+			&-button
+				display: flex
+				justify-content: space-between
+				width: 228px
+				padding: 10px 20px 10px 18px
+				font-style: normal
+				font-weight: 900
+				font-size: 14px
+				line-height: 20px
+				text-decoration: none
+				border: 1px solid #d9dadb
+				border-radius: 20px
+				color: $tertiary
+		&__button
+			&-icon
+				width: 20px
+				height: 20px
+				margin-bottom: -7px
+		&__num
+			margin-bottom: -8px
+			font-style: normal
+			font-weight: normal
+			font-size: 40px
+			line-height: 50px
+			text-transform: uppercase
+		&__comment
+			&-box
+				display: flex
+				padding: 20px 0 28px
+				&--ml90
+					margin-left: 90px
+			&-user
+				width: 75px
+				height: 75px
+				border-radius: 50%
+				margin-right: 15px
+				object-fit: cover
+			&-image
+				margin-right: 5px
+		&__user
+			&-stats
+				display: flex
+			&-box
+				max-width: 570px
+			&-attr
+				margin-bottom: 12px
+			&-name
+				margin-right: 5px
+				font-family: Roboto Slab
+				font-style: normal
+				font-weight: bold
+				font-size: 16px
+				line-height: 25px
+				color: $tertiary
+			&-date
+				font-style: normal
+				font-weight: normal
+				font-size: 12px
+				line-height: 15px
+				color: $comment-text-color
+			&-text
+				margin-top: 0
+				margin-bottom: 13px
+				font-style: normal
+				font-weight: normal
+				font-size: 18px
+				line-height: 30px
+				color: $medium-dark
+				&--mb45
+					margin-bottom: 45px
+			&-reaction
+				margin-right: 11px
+		&__reply
+			margin-right: 14px
+			font-style: normal
+			font-weight: normal
+			font-size: 12px
+			line-height: 15px
+			color: $tertiary
+		&__reaction
+			margin-right: 11px
+			&-num
+				margin-right: 10px
+				font-size: 12px
+				line-height: 15px
+				color: #3DC47E
+		&__splitter
+			width: 750px
+			height: 1px
+			background: #d9dadb
+		&__download
+			&-button
+				display: flex
+				align-items: center
+				justify-content: center
+				// width: 750px
+				// height: 50px
+				padding: 17px 0 17px 26px
+				font-style: normal
+				font-weight: 900
+				font-size: 14px
+				line-height: 20px
+				text-decoration: none
+				border: 1px solid #d9dadb
+				border-radius: 25px
+				color: $tertiary
+			&-loading
+				margin-right: 5px
+		&__form
+			display: flex
+			width: 750px
+			height: 290px
+			margin-top: 55px
+			padding: 30px 40px 35px 30px
+			background: #f5f5f5
+			border-radius: 10px
+			&-title
+				margin-top: 0
+				font-family: Roboto Slab
+				font-style: normal
+				font-weight: bold
+				font-size: 20px
+				line-height: 25px
+				color: $tertiary
+			&-box
+				display: flex
+				flex-direction: column
+			&-user
+				width: 75px
+				height: 75px
+				margin-top: 45px
+				margin-right: 20px
+				border-radius: 50%
+		&__message
+			position: relative
+			&:before
+				position: absolute
+				content: ''
+				top: 28px
+				left: -11px
+				width: 0
+				height: 0
+				border-top: 9px solid transparent
+				border-right: 11px solid #d9dadb
+				border-bottom: 9px solid transparent
+			&::after
+				position: absolute
+				content: ''
+				top: 28px
+				left: -10px
+				width: 0
+				height: 0
+				border-top: 9px solid transparent
+				border-right: 11px solid $light
+				border-bottom: 9px solid transparent
+		&__textarea
+			width: 585px
+			height: 130px
+			padding: 10px
+			margin-bottom: 15px
+			border: 1px solid #d9dadb
+			border-radius: 5px
+		&__button
+			padding: 10px 16px 10px 20px
+			border: none
+		&__send
+			margin-left: 8px

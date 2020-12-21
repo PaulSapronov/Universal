@@ -509,8 +509,8 @@ img {
 
 .hero {
   padding: 30px 0 15px;
-  background: -webkit-gradient(linear, left bottom, left top, color-stop(24.55%, #E5E5E5), color-stop(24.55%, #262D33));
-  background: linear-gradient(0deg, #E5E5E5 24.55%, #262D33 24.55%);
+  background: -webkit-gradient(linear, left bottom, left top, color-stop(22.8%, #E5E5E5), color-stop(22.8%, #262D33));
+  background: linear-gradient(0deg, #E5E5E5 22.8%, #262D33 22.8%);
 }
 
 .hero-wrapper {
@@ -591,6 +591,8 @@ img {
 }
 
 .content__user-avatar {
+  width: 45px;
+  height: 45px;
   margin-right: 10px;
 }
 
@@ -1290,7 +1292,12 @@ img {
   position: absolute;
   top: 0;
   right: 0;
+  fill: #bcbfc2;
   cursor: pointer;
+}
+
+.news__main-bookmark--active {
+  fill: #ff4f52;
 }
 
 .news__main-box {
@@ -1534,6 +1541,20 @@ img {
   color: #ffffff;
 }
 
+.gallery__swiper-slide::after {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: 5;
+  width: 100%;
+  height: 100%;
+  content: ' ';
+  background: -webkit-gradient(linear, left bottom, left top, from(rgba(64, 48, 61, 0.35)), to(rgba(64, 48, 61, 0.35)));
+  background: linear-gradient(0deg, rgba(64, 48, 61, 0.35), rgba(64, 48, 61, 0.35));
+}
+
 .gallery__button {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1676,6 +1697,7 @@ img {
 }
 
 .gallery__career-button {
+  z-index: 1;
   padding: 10px 20px;
 }
 
@@ -2343,6 +2365,7 @@ img {
 
 .article-swiper__quote {
   position: relative;
+  z-index: 4;
   margin-bottom: 45px;
   font-family: Roboto Slab;
   font-style: normal;

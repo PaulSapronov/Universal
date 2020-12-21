@@ -38,6 +38,12 @@ $(document).ready(function () {
 
 	});
 
+	var bookmarkActive = $('.news__main-bookmark');
+	bookmarkActive.on('click', function () {
+		$(this).toggleClass('news__main-bookmark--active');
+	});
+
+
 	var menuButton = $('.menu-button');
 	menuButton.on('click', function () {
 		$('.navbar-bottom').toggleClass('navbar-bottom--visible');

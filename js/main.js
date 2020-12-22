@@ -43,6 +43,10 @@ $(document).ready(function () {
 		$(this).toggleClass('news__main-bookmark--active');
 	});
 
+	var bookmarkHeroActive = $('.article-hero__bookmark');
+	bookmarkHeroActive.on('click', function () {
+		$(this).toggleClass('article-hero__bookmark--active');
+	});
 
 	var menuButton = $('.menu-button');
 	menuButton.on('click', function () {
@@ -78,22 +82,19 @@ $(document).ready(function () {
 		}
 	});
 
-	$(".footer__newsletter-form").validate({
-		errorClass: "invalid",
-		messages: {
-			email: {
-				required: "Укажите ваш электронный адрес",
-				email: "Электронный адрес должен соответствовать формату name@domain.com"
+	$('.form').each(function () {
+		$(this).validate({
+			errorClass: 'invalid',
+			messages: {
+				email: {
+					required: "Укажите ваш электронный адрес",
+					email: "Электронный адрес должен быть в формате name@domain.com"
+				},
+				textarea: {
+					required: "Заполните поле",
+					minlength: "Минимальный размер сообщения - 100 символов"
+				},
 			},
-		},
-	});
-	$(".article-reviews__message").validate({
-		errorClass: "invalid",
-		messages: {
-			textarea: {
-				required: "Необходимо заполнить поле",
-				minlength: "необходимо ввести минимум 100 символов"
-			},
-		},
+		});
 	});
 });

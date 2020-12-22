@@ -33,8 +33,8 @@
 					</ul>
 				</nav>
 				<!-- /.navbar -->
-				<form class="form header__form header__search-form" action="#">
-					<input class="input header__input" type="search" placeholder="Поиск">
+				<form class="header__form header__search-form" action="#">
+					<input class="header__input" type="search" placeholder="Поиск">
 					<button class="button header__button header__input-button">
 						<img src="img/svg/icon/search.svg" alt="Icon: search">
 					</button>
@@ -546,6 +546,7 @@
 						<div class="news__sidebar-title">Недавно опубликовано</div>
 						<div class="news__sidebar-box">
 							<div class="news__sidebar-card">
+								<img class="news__sidebar-after" src="img/svg/num-1.svg" alt="news">
 								<img class="news__sidebar-image" src="img/news-sidebar/news-sidebar-1.png" alt="news">
 								<a href="#" class="news__sidebar-info">
 									<span class="news__sidebar-text">Работа на удаленке, как это теперь</span>
@@ -553,6 +554,7 @@
 								</a>
 							</div>
 							<div class="news__sidebar-card">
+								<img class="news__sidebar-after" src="img/svg/num-2.svg" alt="news">
 								<img class="news__sidebar-image" src="img/news-sidebar/news-sidebar-2.png" alt="news">
 								<a href="#" class="news__sidebar-info">
 									<span class="news__sidebar-text">Для чего нужен Node.js и с чем...</span>
@@ -560,6 +562,7 @@
 								</a>
 							</div>
 							<div class="news__sidebar-card">
+								<img class="news__sidebar-after" src="img/svg/num-3.svg" alt="news">
 								<img class="news__sidebar-image" src="img/news-sidebar/news-sidebar-3.png" alt="news">
 								<a href="#" class="news__sidebar-info">
 									<span class="news__sidebar-text">Работа в Google: собеседования и...</span>
@@ -567,6 +570,7 @@
 								</a>
 							</div>
 							<div class="news__sidebar-card">
+								<img class="news__sidebar-after" src="img/svg/num-4.svg" alt="news">
 								<img class="news__sidebar-image" src="img/news-sidebar/news-sidebar-4.png" alt="news">
 								<a href="#" class="news__sidebar-info">
 									<span class="news__sidebar-text">Переезд в Нью Йорк для работы по...</span>
@@ -574,6 +578,7 @@
 								</a>
 							</div>
 							<div class="news__sidebar-card">
+								<img class="news__sidebar-after" src="img/svg/num-5.svg" alt="news">
 								<img class="news__sidebar-image" src="img/news-sidebar/news-sidebar-5.png" alt="news">
 								<a href="#" class="news__sidebar-info">
 									<span class="news__sidebar-text">Почему родители против того, чтобы...</span>
@@ -581,6 +586,7 @@
 								</a>
 							</div>
 							<div class="news__sidebar-card">
+								<img class="news__sidebar-after" src="img/svg/num-6.svg" alt="news">
 								<img class="news__sidebar-image" src="img/news-sidebar/news-sidebar-6.png" alt="news">
 								<a href="#" class="news__sidebar-info">
 									<span class="news__sidebar-text">Прокрастинация: побороть отклады...</span>
@@ -588,6 +594,7 @@
 								</a>
 							</div>
 							<div class="news__sidebar-card">
+								<img class="news__sidebar-after" src="img/svg/num-7.svg" alt="news">
 								<img class="news__sidebar-image" src="img/news-sidebar/news-sidebar-7.png" alt="news">
 								<a href="#" class="news__sidebar-info">
 									<span class="news__sidebar-text">Правки от заказчика могут быть...</span>
@@ -691,9 +698,11 @@
 
 				<div class="footer__newsletter">
 					<h2 class="footer__newsletter-title">Подпишитесь на нашу рассылку</h2>
-					<form action="#" class="footer__newsletter-form">
-						<input class="input footer__newsletter-input" type="email" placeholder="Email">
-						<button class="button footer__newsletter-button">Подписаться</button>
+					<form class="footer__newsletter-form" action="send.php" method="POST">
+						<div class="footer__newsletter-group">
+							<input class="footer__newsletter-input" name="email" type="email" placeholder="Email" required>
+						</div>
+						<button class="button footer__newsletter-button" type="submit">Подписаться</button>
 					</form>
 				</div>
 				<!-- /.footer__newsletter -->
@@ -783,6 +792,7 @@
 	<!-- /.footer -->
 	<script src="https://code.jquery.com/jquery-3.5.1.min.js"
 		integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0=" crossorigin="anonymous"></script>
+	<script src="js/jquery.validate.min.js"></script>
 	<script src="js/swiper-bundle.min.js"></script>
 	<script src="js/main.js"></script>
 </body>

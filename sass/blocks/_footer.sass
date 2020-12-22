@@ -5,10 +5,7 @@
 		display: flex
 		flex-direction: column
 	&__newsletter
-		grid-column: 1 / 7
-		display: flex
-		flex-direction: column
-		align-items: center
+		padding-bottom: 70px
 		&-title
 			margin-top: 0
 			margin-bottom: 25px
@@ -21,13 +18,16 @@
 			color: $tertiary
 		&-form
 			display: flex
-			align-items: center
-			margin-bottom: 70px
+			justify-content: space-between
+			margin: auto
+			width: 459px
+			height: 40px
+
 		&-input
 			height: 40px
 			width: 313px
 			margin-right: 5px
-			padding: 0 15px
+			padding: 10px 14px
 			font-style: normal
 			font-weight: normal
 			font-size: 14px
@@ -36,6 +36,8 @@
 			border: 1px solid #d9dadb
 			border-radius: 5px
 		&-button
+
+			height: 40px
 			border: none
 			padding: 10px 25px
 	&__info
@@ -115,3 +117,5 @@
 			margin: 0
 		&-tag
 			margin-top: -18px
+.invalid
+	color: red

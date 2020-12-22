@@ -37,7 +37,7 @@ $(document).ready(function () {
 		},
 
 	});
-
+	// Изменение цвета закладки
 	var bookmarkActive = $('.news__main-bookmark');
 	bookmarkActive.on('click', function () {
 		$(this).toggleClass('news__main-bookmark--active');
@@ -78,23 +78,22 @@ $(document).ready(function () {
 		}
 	});
 
-	$('.form').each(function () {
-		$(this).validate({
-			errorClass: 'invalid',
-			messages: {
-				name: {
-					required: 'Please specify your name',
-				},
-				email: {
-					required: 'We need your email address to contact you',
-					email: 'Your email address must be in the format of name@domain.com',
-				},
-				phone: {
-					required: 'Please specify your phone number',
-					minlength: 'Your phone must be in the format of +7(XXX)XXX-XX-XX"'
-				},
+	$(".footer__newsletter-form").validate({
+		errorClass: "invalid",
+		messages: {
+			email: {
+				required: "Укажите ваш электронный адрес",
+				email: "Электронный адрес должен соответствовать формату name@domain.com"
 			},
-		});
+		},
 	});
-
+	$(".article-reviews__message").validate({
+		errorClass: "invalid",
+		messages: {
+			textarea: {
+				required: "Необходимо заполнить поле",
+				minlength: "необходимо ввести минимум 100 символов"
+			},
+		},
+	});
 });

@@ -49,6 +49,10 @@
 			line-height: 50px
 			text-transform: uppercase
 		&__comment
+			&-case
+				display: block
+				&--hidden
+					display: none
 			&-box
 				display: flex
 				padding: 20px 0 29px
@@ -108,7 +112,11 @@
 				margin-right: 10px
 				font-size: 12px
 				line-height: 15px
-				color: #3DC47E
+				color: $medium-dark
+				&--red
+					color: #FF4F52
+				&--green
+					color: #3DC47E
 		&__splitter
 			width: 750px
 			height: 1px
@@ -118,8 +126,8 @@
 				display: flex
 				align-items: center
 				justify-content: center
-				// width: 750px
-				// height: 50px
+				width: 100%
+				height: 50px
 				padding: 15px 0 13px 26px
 				font-style: normal
 				font-weight: 900
@@ -128,7 +136,9 @@
 				text-decoration: none
 				border: 1px solid #d9dadb
 				border-radius: 25px
+				background-color: #fff
 				color: $tertiary
+				cursor: pointer
 			&-loading
 				margin-right: 5px
 		&__form

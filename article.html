@@ -350,7 +350,7 @@
 								<img src="img/svg/icon/comment.svg" alt="Icon: comment" class="article-reviews__comment-image">
 								<span class="article-reviews__reply">Ответить</span>
 								<img src="img/svg/icon/thumb-up.svg" alt="Icon: like" class="article-reviews__user-reaction">
-								<span class="article-reviews__reaction-num">+10</span>
+								<span class="article-reviews__reaction-num article-reviews__reaction-num--green">+10</span>
 								<img src="img/svg/icon/thumb-down.svg" alt="Icon: dis" class="article-reviews__user-reaction">
 							</div>
 						</div>
@@ -391,7 +391,7 @@
 								<img src="img/svg/icon/comment.svg" alt="Icon: comment" class="article-reviews__comment-image">
 								<span class="article-reviews__reply">Ответить</span>
 								<img src="img/svg/icon/thumb-up.svg" alt="Icon: like" class="article-reviews__user-reaction">
-								<span class="article-reviews__reaction-num">-3</span>
+								<span class="article-reviews__reaction-num article-reviews__reaction-num--red">-3</span>
 								<img src="img/svg/icon/thumb-down.svg" alt="Icon: dis" class="article-reviews__user-reaction">
 							</div>
 						</div>
@@ -417,10 +417,75 @@
 						</div>
 					</div>
 
-					<a href="#" class="article-reviews__download-button article-reviews__download-button--active">
+					<!-- hidden -->
+					<div class="article-reviews__comment-case article-reviews__comment-case--hidden">
+						<div class="article-reviews__splitter"></div>
+						<div class="article-reviews__comment-box article-reviews__comment-box--hidden ">
+							<img src="img/user/user-avatar-4.png" alt="Icon: user" class="article-reviews__comment-user">
+							<div class="article-reviews__user-box">
+								<div class="article-reviews__user-attr">
+									<span class="article-reviews__user-name">Мира Стахова</span>
+									<span class="article-reviews__user-date">17 июля, 18:41</span>
+								</div>
+								<p class="article-reviews__user-text">Да, спасибо за замечание. Добавлю список регионов, где этот режим
+									уже действует и буду периодически обновлять его. Потому что обещали ввести этот режим везде. </p>
+								<div class="article-reviews__user-stats">
+									<img src="img/svg/icon/comment.svg" alt="Icon: comment" class="article-reviews__comment-image">
+									<span class="article-reviews__reply">Ответить</span>
+									<img src="img/svg/icon/thumb-up.svg" alt="Icon: like" class="article-reviews__user-reaction">
+									<span class="article-reviews__reaction-num">0</span>
+									<img src="img/svg/icon/thumb-down.svg" alt="Icon: dis" class="article-reviews__user-reaction">
+								</div>
+							</div>
+						</div>
+						<div class="article-reviews__splitter"></div>
+						<div class="article-reviews__comment-box article-reviews__comment-box--hidden">
+							<img src="img/user/user-avatar-6.png" alt="Icon: user" class="article-reviews__comment-user">
+							<div class="article-reviews__user-box">
+								<div class="article-reviews__user-attr">
+									<span class="article-reviews__user-name">Анжела Иванова</span>
+									<span class="article-reviews__user-date">17 июля, 18:53</span>
+								</div>
+								<p class="article-reviews__user-text">Если честно, кажется, что этот
+									налоговый режим ввели, чтобы собрать
+									больше денег с народа. Я, конечно, понимаю, что бюджеты надо пополнять, но не лучше ли обложить
+									налогом
+									богатых?</p>
+								<div class="article-reviews__user-stats">
+									<img src="img/svg/icon/comment.svg" alt="Icon: comment" class="article-reviews__comment-image">
+									<span class="article-reviews__reply">Ответить</span>
+									<img src="img/svg/icon/thumb-up.svg" alt="Icon: like" class="article-reviews__user-reaction">
+									<span class="article-reviews__reaction-num article-reviews__reaction-num--red">-3</span>
+									<img src="img/svg/icon/thumb-down.svg" alt="Icon: dis" class="article-reviews__user-reaction">
+								</div>
+							</div>
+						</div>
+						<div class="article-reviews__splitter"></div>
+						<div class="article-reviews__comment-box article-reviews__comment-box--hidden">
+							<img src="img/user/user-avatar-7.png" alt="Icon: user" class="article-reviews__comment-user">
+							<div class="article-reviews__user-box">
+								<div class="article-reviews__user-attr">
+									<span class="article-reviews__user-name">Крис Яков</span>
+									<span class="article-reviews__user-date">17 июля, 19:12</span>
+								</div>
+								<p class="article-reviews__user-text">Такой режим уже давно работает в продвинутых странах, почему его
+									ввели только сейчас, непонятно. Хотелось бы, чтобы это все заработало в моем регионе, буду в числе
+									первых!</p>
+								<div class="article-reviews__user-stats">
+									<img src="img/svg/icon/comment.svg" alt="Icon: comment" class="article-reviews__comment-image">
+									<span class="article-reviews__reply">Ответить</span>
+									<img src="img/svg/icon/thumb-up.svg" alt="Icon: like" class="article-reviews__user-reaction">
+									<span class="article-reviews__reaction-num">0</span>
+									<img src="img/svg/icon/thumb-down.svg" alt="Icon: dis" class="article-reviews__user-reaction">
+								</div>
+							</div>
+						</div>
+					</div>
+					<!-- /.hidden -->
+					<button class="article-reviews__download-button">
 						<img src="img/svg/icon/loading.svg" alt="Icon: loading" class="article-reviews__download-loading">
 						загрузить еще
-					</a>
+					</button>
 
 					<div class="article-reviews__form">
 						<h3 class="article-reviews__form-title">Что вы думаете на этот счет? </h3>
@@ -535,7 +600,7 @@
 						<a href="#" class="footer__contacts-link">Контакты</a>
 						<a href="#" class="footer__contacts-link">Работа у нас</a>
 						<a href="#" class="footer__contacts-link">Реклама</a>
-						<a href="#" class="footer__contacts-link">Партнерство</a>
+						<a href="#" data-toggle="modal" class="footer__contacts-link">Партнерство</a>
 					</div>
 					<div class="footer__contacts-social">
 						<a href="https://www.facebook.com" class="footer__social-link" target="_blank">
@@ -566,6 +631,48 @@
 		<!-- /.container -->
 	</footer>
 	<!-- /.footer -->
+
+
+	<div class="modal">
+		<div class="modal__overlay"></div>
+		<!-- /.modal__overlay -->
+		<div class="modal__dialog">
+			<a href="#" class="modal__close">
+				<img src="img/svg/icon/close.svg" alt="Icon: " />
+			</a>
+
+			<h3 class="modal__title">Обратная связь</h3>
+			<form action="send-modal.php" method="POST" class="form modal__form">
+				<h4 class="modal__info modal__info-theme">Тема</h4>
+				<img src="img/svg/icon/dropdown-arrow.svg" alt="Icon: arrow" class="modal__select-image">
+				<select class="modal__select" name="select" required>
+					<option disabled selected class="modal__option">Выберите тему</option>
+					<option class="modal__option">Отступы</option>
+					<option class="modal__option">Формы</option>
+					<option class="modal__option">Кнопки</option>
+				</select>
+				<h4 class="modal__info modal__info-message">Сообщение</h4>
+				<textarea class="message modal__message" name="message" required></textarea>
+				<h4 class="modal__info modal__info-email">Email</h4>
+
+				<input type="email" class="modal__input" name="email" required />
+
+				<label class="modal__checkbox-label" for="modal-checkbox">Согласен с обработкой
+					данных</label>
+				<input class="modal__checkbox" type="checkbox" name="checkbox" id="modal-checkbox" required>
+
+
+				<div class="modal__send-form">
+					<button class="button modal__button" type="submit">Отправить</button>
+				</div>
+
+			</form>
+		</div>
+		<!-- /.modal__dialog -->
+	</div>
+	<!-- /.modal -->
+
+
 	<script src="https://code.jquery.com/jquery-3.5.1.min.js"
 		integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0=" crossorigin="anonymous"></script>
 	<script src="js/jquery.validate.min.js"></script>

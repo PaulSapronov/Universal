@@ -48,6 +48,18 @@ $(document).ready(function () {
 		$(this).toggleClass('article-hero__bookmark--active');
 	});
 
+	// Открытие комментов
+	var openComment = $(".article-reviews__download-button");
+	openComment.on("click", function () {
+		$(".article-reviews__comment-case").toggleClass("article-reviews__comment-case--hidden");
+	});
+
+	// Переключение checkbox
+	var checkBox = $('.modal__checkbox-label');
+	checkBox.on('click', function () {
+		$('.modal__checkbox-label').toggleClass('modal__checkbox-label--checked');
+	});
+
 	var menuButton = $('.menu-button');
 	menuButton.on('click', function () {
 		$('.navbar-bottom').toggleClass('navbar-bottom--visible');
@@ -87,13 +99,23 @@ $(document).ready(function () {
 			errorClass: 'invalid',
 			messages: {
 				email: {
-					required: "Укажите ваш электронный адрес",
+					required: "Укажите ваш электронный адрес!",
 					email: "Электронный адрес должен быть в формате name@domain.com"
 				},
 				textarea: {
 					required: "Заполните поле",
 					minlength: "Минимальный размер сообщения - 100 символов"
 				},
+				select: {
+					required: "Выберите тему!",
+				},
+				message: {
+					required: "Заполните поле!",
+				},
+				checkbox: {
+					required: "Это поле обязательно!",
+				},
+
 			},
 		});
 	});

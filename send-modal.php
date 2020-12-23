@@ -6,26 +6,19 @@ require 'phpmailer/Exception.php';
 
 // Переменные, которые отправляет пользователь
 $email = $_POST['email'];
-$name = $_POST['name'];
-$phone = $_POST['phone'];
+$select = $_POST['select'];
+$checkbox = $_POST['checkbox'];
 $message = $_POST['message'];
-$textarea = $_POST['textarea'];
+
 
 // Формирование самого письма
-if ($email) {
-    $title = "Новая подписка";
+    $title = "Новое сообщение";
     $body = "
-    <h2>Новая подписка</h2><br>
-    <b>Почта:</b>$email
-    ";
-}
-else {
-    $title = "Новый комментарий";
-    $body = "
-    <h2>Новый комментарий</h2>
-    <b>Сообщение:</b><br>$textarea
-    ";
-}
+    <h2>Новое сообщение</h2>
+    <b>Тема:</b> $select<br>
+		<b>Сообщение:</b>$message<br><br>
+    <br>Почта:</br>$email<br>
+		";
 
 
 // Настройки PHPMailer

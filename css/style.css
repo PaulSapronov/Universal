@@ -2989,7 +2989,7 @@ img {
   position: absolute;
   content: ' ';
   top: 28px;
-  left: -11px;
+  left: -10px;
   width: 0;
   height: 0;
   border-top: 9px solid transparent;
@@ -3001,7 +3001,7 @@ img {
   position: absolute;
   content: ' ';
   top: 28px;
-  left: -10px;
+  left: -9px;
   width: 0;
   height: 0;
   border-top: 9px solid transparent;
@@ -3026,6 +3026,42 @@ img {
 
 .article-reviews__send {
   margin-left: 8px;
+}
+
+.thankyou {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  text-align: center;
+  padding: 90px 0 130px;
+}
+
+.thankyou__title {
+  margin-top: 30px;
+  font-family: Roboto Slab;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 40px;
+  line-height: 50px;
+  color: #262d33;
+}
+
+.thankyou__for {
+  margin-bottom: 40px;
+  font-family: Roboto Slab;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 25px;
+  line-height: 30px;
+  color: #262d33;
+}
+
+.thankyou__button {
+  padding: 15px 25px;
 }
 
 .modal__overlay {
